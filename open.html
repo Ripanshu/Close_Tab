@@ -7,12 +7,7 @@
     <script type="text/javascript">
         function redirectToGoogle() {
             var url = "https://www.google.com";
-            var win = window.open(url, '_self');
-            if (win) {
-                win.focus();
-            } else {
-                window.location.href = url;
-            }
+            window.location.href = url; // Redirects in the same tab
         }
     </script>
 </head>
