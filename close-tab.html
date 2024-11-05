@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Tab</title>
+    <script type="text/javascript">
+        function closeTab() {
+            window.open('', '_self', ''); // Open a blank page in the same tab
+            window.close(); // Close the current tab
+        }
+    </script>
+</head>
+<body onload="closeTab()">
+    <!-- The body content will not be visible as the tab will close immediately -->
+</body>
+</html>
