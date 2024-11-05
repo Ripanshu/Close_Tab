@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <script type="text/javascript">
+        function redirectToGoogle() {
+            var url = "https://www.google.com";
+            var win = window.open(url, '_self');
+            if (win) {
+                win.focus();
+            } else {
+                window.location.href = url;
+            }
+        }
+    </script>
+</head>
+<body onload="redirectToGoogle()">
+    <!-- The body content will not be visible as the tab will redirect immediately -->
+</body>
+</html>
